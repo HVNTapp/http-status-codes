@@ -222,6 +222,12 @@ export enum ReasonPhrases {
      */
     PRECONDITION_FAILED = "Precondition Failed",
     /**
+     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.15
+     *
+     * The error response code indicates that the server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol.
+     */
+    UPGRADE_REQUIRED = "Upgrade Required",
+    /**
      * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-3
      *
      * The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.

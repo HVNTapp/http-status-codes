@@ -165,7 +165,7 @@
     "code": 420,
     "phrase": "Method Failure",
     "constant": "METHOD_FAILURE",
-	"isDeprecated": true,
+    "isDeprecated": true,
     "comment": {
       "doc": "Official Documentation @ https://tools.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-ietf-webdav-protocol-06.txt",
       "description": "A deprecated response used by the Spring Framework when a method has failed."
@@ -322,6 +322,15 @@
     "comment": {
       "doc": "Official Documentation @ https://tools.ietf.org/html/rfc7232#section-4.2",
       "description": "The client has indicated preconditions in its headers which the server does not meet."
+    }
+  },
+  {
+    "code": 426,
+    "phrase": "Upgrade Required",
+    "constant": "UPGRADE_REQUIRED",
+    "comment": {
+      "doc": "Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.15",
+      "description": "The error response code indicates that the server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol."
     }
   },
   {
@@ -490,7 +499,7 @@
     "code": 305,
     "phrase": "Use Proxy",
     "constant": "USE_PROXY",
-	"isDeprecated": true,
+    "isDeprecated": true,
     "comment": {
       "doc": "Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.6",
       "description": "Was defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy."
