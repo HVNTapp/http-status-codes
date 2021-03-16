@@ -1,8 +1,8 @@
 {
-  "name": "http-status-codes",
+  "name": "@hvntapp/http-status-codes",
   "sideEffects": false,
-  "version": "2.1.4",
-  "description": "Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus API.",
+  "version": "2.1.5",
+  "description": "Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus API. Forked from /prettymuchbryce/http-status-codes",
   "scripts": {
     "update-codes": "ts-node --project ./scripts/tsconfig.json ./scripts/update-codes",
     "build": "./scripts/build.sh",
@@ -11,7 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/prettymuchbryce/http-status-codes.git"
+    "url": "https://github.com/HVNTapp/http-status-codes.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "build/",
